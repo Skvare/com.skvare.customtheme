@@ -1,0 +1,94 @@
+/* Import Walbrook base variables */
+@import url('../../../../../../../all/modules/civicrm/ext/riverlea/streams/walbrook/css/_variables.css');
+
+/* Custom Color Palette */
+:root {
+  /* Primary Brand Colors */
+  --crm-primary: #2E7D32;           /* Custom green instead of Walbrook blue */
+  --crm-primary-hover: #1B5E20;
+  --crm-primary-light: #4CAF50;
+  --crm-primary-dark: #1B5E20;
+
+  /* Secondary Colors */
+  --crm-secondary: #FF6F00;         /* Custom orange accent */
+  --crm-secondary-hover: #E65100;
+
+  /* Status Colors */
+  --crm-success: #2E7D32;           /* Match primary green */
+  --crm-warning: #F57C00;
+  --crm-danger: #C62828;
+  --crm-info: #0277BD;
+
+  /* Background Colors */
+  --crm-bg-primary: #FFFFFF;
+  --crm-bg-secondary: #F8F9FA;
+  --crm-bg-tertiary: #E8F5E8;       /* Light green tint */
+
+  /* Text Colors */
+  --crm-text-primary: #212529;
+  --crm-text-secondary: #6C757D;
+  --crm-text-muted: #ADB5BD;
+
+  /* Button Styling */
+  --crm-btn-primary-bg: var(--crm-primary);
+  --crm-btn-primary-border: var(--crm-primary);
+  --crm-btn-primary-color: #FFFFFF;
+  --crm-btn-primary-bg-hover: var(--crm-primary-hover);
+  --crm-btn-roundness: 4px;         /* Slightly rounded corners */
+
+  /* Border and Shadow */
+  --crm-border-color: #DEE2E6;
+  --crm-border-radius: 4px;
+  --crm-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  /* Header Customization */
+  --crm-header-bg: var(--crm-primary);
+  --crm-header-color: #FFFFFF;
+  --crm-header-border: none;
+
+  /* Navigation */
+  --crm-nav-bg: #FFFFFF;
+  --crm-nav-border: 1px solid var(--crm-border-color);
+  --crm-nav-link-color: var(--crm-text-primary);
+  --crm-nav-link-hover-bg: var(--crm-bg-tertiary);
+
+  /* Tables */
+  --crm-table-bg: #FFFFFF;
+  --crm-table-border: 1px solid var(--crm-border-color);
+  --crm-table-header-bg: var(--crm-bg-secondary);
+  --crm-table-row-hover: var(--crm-bg-tertiary);
+
+  /* Forms */
+  --crm-input-bg: #FFFFFF;
+  --crm-input-border: 1px solid #CED4DA;
+  --crm-input-focus-border: var(--crm-primary);
+  --crm-input-focus-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+
+  /* Custom Typography */
+  --crm-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --crm-font-size-base: 14px;
+  --crm-line-height: 1.5;
+
+  /* Custom spacing */
+  --crm-spacing-xs: 0.25rem;
+  --crm-spacing-sm: 0.5rem;
+  --crm-spacing-md: 1rem;
+  --crm-spacing-lg: 1.5rem;
+  --crm-spacing-xl: 3rem;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --crm-bg-primary: #1A1A1A;
+    --crm-bg-secondary: #2D2D2D;
+    --crm-bg-tertiary: #1B2A1B;
+    --crm-text-primary: #FFFFFF;
+    --crm-text-secondary: #B0B0B0;
+    --crm-border-color: #404040;
+    --crm-input-bg: #2D2D2D;
+    --crm-input-border: 1px solid #404040;
+    --crm-table-bg: #1A1A1A;
+    --crm-nav-bg: #2D2D2D;
+  }
+}

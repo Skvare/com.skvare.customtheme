@@ -1,0 +1,71 @@
+/**
+ * This is a placeholder for civicrm.css in the 'customtheme' theme.
+ * Here are a few ideas on what to do about it:
+ *   - Make a real CSS file (e.g. by hand-coding or setting up a SASS/SCSS build process).
+ *   - Inherit the stock Greenwich file:
+ *       - Edit the file 'customtheme.theme.php'
+ *         and add 'greenwich' to the 'search_order'
+ *       - Delete this copy of 'civicrm.css'
+ *   - Disable this file completely:
+ *       - Edit the file 'customtheme.theme.php'
+ *         and add 'css/civicrm.css' to the 'excludes' list
+ *       - Delete this copy of 'civicrm.css'
+ */
+
+/* Main CSS file that imports the variables and any additional custom styles */
+@import url('streams/custom/variables.css');
+
+/* Additional custom styles that go beyond variables */
+.crm-container {
+  font-family: var(--crm-font-family);
+  font-size: var(--crm-font-size-base);
+  line-height: var(--crm-line-height);
+}
+
+/* Custom header branding */
+.crm-container .crm-logo {
+  background-image: url('../images/custom-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Enhanced button styles */
+.crm-container .crm-button {
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.crm-container .crm-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--crm-box-shadow);
+}
+
+/* Custom form styling */
+.crm-container .crm-form-block {
+  background: var(--crm-bg-primary);
+  border: var(--crm-border-color);
+  border-radius: var(--crm-border-radius);
+  padding: var(--crm-spacing-lg);
+  margin-bottom: var(--crm-spacing-md);
+}
+
+/* Enhanced table styling */
+.crm-container table.crm-info-panel {
+  border-radius: var(--crm-border-radius);
+  overflow: hidden;
+}
+
+.crm-container table.crm-info-panel th {
+  background: var(--crm-table-header-bg);
+  font-weight: 600;
+  padding: var(--crm-spacing-md);
+}
+
+/* Custom status indicators */
+.crm-container .crm-status-success {
+  background-color: var(--crm-success);
+  color: white;
+  padding: var(--crm-spacing-xs) var(--crm-spacing-sm);
+  border-radius: var(--crm-border-radius);
+  font-size: 0.875rem;
+}
