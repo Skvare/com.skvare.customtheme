@@ -30,3 +30,16 @@ function customtheme_civicrm_install(): void {
 function customtheme_civicrm_enable(): void {
   _customtheme_civix_civicrm_enable();
 }
+
+/**
+ * Implements hook_civicrm_coreResourceList().
+ */
+function customtheme_civicrm_coreResourceList(&$list, $region) {
+  $resources = CRM_Core_Resources::singleton();
+  // Load parent theme CSS first
+  $resources->addStyleFile('riverlea', 'streams/walbrook/css/_variables.css', -10, $region);
+  $resources->addStyleFile('riverlea', 'streams/walbrook/css/civicrm.css', -10, $region);
+
+  // Then load your subtheme CSS
+  $resources->addStyleFile('com.skvare.customtheme', '/css/civicrm_custom.css', 0, $region);
+}

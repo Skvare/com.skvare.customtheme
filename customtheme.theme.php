@@ -8,8 +8,9 @@ return [
   'prefix' => NULL,
   'url_callback' => '\\Civi\\Core\\Themes\\Resolvers::simple',
   'search_order' => [
-    'customtheme',
-    '_fallback_',
+    'customtheme',        // Your custom theme first
+    'walbrook',          // Then Walbrook as fallback
+    '_fallback_',        // Finally default fallback
   ],
   'excludes' => [],
 ];
